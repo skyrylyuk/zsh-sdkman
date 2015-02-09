@@ -28,6 +28,11 @@ _2nd_arguments=(
   'vertx:event driven application framework'
   'groovyserv:run groovy as a server, reduces start-up time'
   'springboot:create a spring application with minimum setup'
+  'asciidoctorj:java bindings for ssciidoctor'
+  'crash:the shell for the java platform'
+  'gaiden:create documentation with markdown easily'
+  'glide:create awesome apps on google app engine'
+  'jbake:static site/blog generator for developers & designers'
 )
 
 local -a _toggle_mode
