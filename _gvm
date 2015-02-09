@@ -21,7 +21,7 @@ _1st_arguments=(
 
 local -a _2nd_arguments
 _2nd_arguments=(
-  'asciidoctorj:java bindings for ssciidoctor'
+  'asciidoctorj:java bindings for asciidoctor'
   'crash:the shell for the java platform'
   'gaiden:create documentation with markdown easily'
   'glide:create awesome apps on google app engine'
