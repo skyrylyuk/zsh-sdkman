@@ -16,6 +16,7 @@ _1st_arguments=(
   'broadcast:display the last broadcast message'
   'help:show the gvm help message'
   'offline:enable or disable offline mode'
+  'flush:flush local data'
 )
 
 local -a _2nd_arguments
@@ -41,6 +42,14 @@ _toggle_mode=(
   'disable:disable offline mode'
 )
 
+local -a _flush_candidates
+_flush_candidates=(
+   'candidates:flush product candidates'
+   'broadcast:flush broadcast message'
+   'archives:flush local cache files of archives'
+   'temp:flush temporary data'
+)
+
 local expl
 
 _arguments \
@@ -58,4 +67,6 @@ case "$words[1]" in
     _describe -t commands "gvm subcommand" _2nd_arguments ;;
   offline)
     _describe -t commands "gvm subcommand" _toggle_mode ;;
+  flush)
+    _describe -t commands "gvm subcommand" _flush_candidates ;;
 esac
