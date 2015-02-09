@@ -21,19 +21,19 @@ _1st_arguments=(
 
 local -a _2nd_arguments
 _2nd_arguments=(
-  'groovy:dynamic jvm programming language'
-  'grails:full-stack web framework'
-  'griffon:framework for building desktop application'
-  'gradle:build tool using groovy dsl'
-  'lazybones:project creation tool that uses packaged project templates'
-  'vertx:event driven application framework'
-  'groovyserv:run groovy as a server, reduces start-up time'
-  'springboot:create a spring application with minimum setup'
   'asciidoctorj:java bindings for ssciidoctor'
   'crash:the shell for the java platform'
   'gaiden:create documentation with markdown easily'
   'glide:create awesome apps on google app engine'
+  'gradle:build tool using groovy dsl'
+  'grails:full-stack web framework'
+  'griffon:framework for building desktop application'
+  'groovy:dynamic jvm programming language'
+  'groovyserv:run groovy as a server, reduces start-up time'
   'jbake:static site/blog generator for developers & designers'
+  'lazybones:project creation tool that uses packaged project templates'
+  'springboot:create a spring application with minimum setup'
+  'vertx:event driven application framework'
 )
 
 local -a _toggle_mode
