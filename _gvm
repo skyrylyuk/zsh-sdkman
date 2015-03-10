@@ -11,6 +11,7 @@ _1st_arguments=(
   'use:use a candidate version in current shell'
   'default:set the default candidate version for every shell'
   'current:display current candidate version'
+  'outdated:display outdated candidate version'
   'version:display the current version of gvm'
   'broadcast:display the last broadcast message'
   'help:show the gvm help message'
@@ -61,7 +62,7 @@ if (( CURRENT == 1 )); then
 fi
 
 case "$words[1]" in
-  install|uninstall|list|use|current|default)
+  install|uninstall|list|use|current|outdated|default)
     _describe -t commands "gvm subcommand" _2nd_arguments ;;
   i|rm|ls|u|c|d)
     _describe -t commands "gvm subcommand" _2nd_arguments ;;
