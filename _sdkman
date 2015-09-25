@@ -1,7 +1,7 @@
-#compdef gvm
+#compdef sdk
 #autoload
 
-# gvm zsh completion, based on homebrew completion
+# sdk zsh completion, based on homebrew completion
 
 local -a _1st_arguments
 _1st_arguments=(
@@ -12,11 +12,11 @@ _1st_arguments=(
   'default:set the default candidate version for every shell'
   'current:display current candidate version'
   'outdated:display outdated candidate version'
-  'version:display the current version of gvm'
+  'version:display the current version of sdkman'
   'broadcast:display the last broadcast message'
-  'help:show the gvm help message'
+  'help:show the sdkman help message'
   'offline:enable or disable offline mode'
-  'selfupdate:update the gvm'
+  'selfupdate:update the sdkman'
   'flush:flush local data'
 )
 
@@ -57,17 +57,17 @@ _arguments \
   '*:: :->subcmds' && return 0
 
 if (( CURRENT == 1 )); then
-  _describe -t commands "gvm subcommand" _1st_arguments
+  _describe -t commands "sdk subcommand" _1st_arguments
   return
 fi
 
 case "$words[1]" in
   install|uninstall|list|use|current|outdated|default)
-    _describe -t commands "gvm subcommand" _2nd_arguments ;;
+    _describe -t commands "sdk subcommand" _2nd_arguments ;;
   i|rm|ls|u|c|d)
-    _describe -t commands "gvm subcommand" _2nd_arguments ;;
+    _describe -t commands "sdk subcommand" _2nd_arguments ;;
   offline)
-    _describe -t commands "gvm subcommand" _toggle_mode ;;
+    _describe -t commands "sdk subcommand" _toggle_mode ;;
   flush)
-    _describe -t commands "gvm subcommand" _flush_candidates ;;
+    _describe -t commands "sdk subcommand" _flush_candidates ;;
 esac
