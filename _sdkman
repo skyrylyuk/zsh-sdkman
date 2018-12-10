@@ -31,8 +31,12 @@ _2nd_arguments=(
   'griffon:framework for building desktop application'
   'groovy:dynamic jvm programming language'
   'groovyserv:run groovy as a server, reduces start-up time'
+  'java:Java Platform, Standard Edition (or Java SE)'
   'jbake:static site/blog generator for developers & designers'
   'lazybones:project creation tool that uses packaged project templates'
+  'maven:Apache Maven is a software project management and comprehension tool'
+  'micronaut:Micronaut is an open source microservice framework for the JVM'
+  'sbt:open source build tool for Scala and Java projects'
   'springboot:create a spring application with minimum setup'
   'vertx:event driven application framework'
 )
